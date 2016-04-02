@@ -2,9 +2,11 @@ package fr.esiea.tetris2;
 
 public class Grille {
 
- public int[][] Gril(){
 	
-	 int[][] matrice=new int[40][40];
+	// cette contient les points du panneau qui sont dejas occupés
+ public int[][] Gril(){
+	int dote =20;
+	 int[][] matrice=new int[21][21];
 
 	 
 	 int i, j;
@@ -17,24 +19,5 @@ public class Grille {
 	 }
    return matrice;	
 	}
- 
- 
- public void Gril1(int[][] tableau){
-	 
-	 int i, j;	 
-	 for(i=0; i<tableau.length; i++) {
-	 	for(j=0; j<tableau[i].length; j++){
-	 	 
-	 		if(tableau[i][j] == 1 ){
-	 			 System.out.print("$");	 		
-	 	  }else{ System.out.print(" ");} 		
-	 	}	 	
-	 	System.out.print("\n");
-	
- }
-	
- 
- 
- }
  
 }
